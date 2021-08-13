@@ -1,9 +1,13 @@
 name: Node.JS CI - desafio
 
 on:
+  push:
+    branches:
+      - *
+
   pull_request:
     branches:
-      - main
+      - *
 jobs:
   pipeline-ci:
     runs-on: ubuntu-latest
